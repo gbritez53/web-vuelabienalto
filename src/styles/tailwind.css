@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap");
+
+.deep-space {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.dark-ocean {
+  background: #005c97; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #363795,
+    #005c97
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #363795, #005c97);
+}
+
+.green-wpp {
+  background: #056105; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #13c913,
+    #056105
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #13c913,
+    #056105
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.blue-sky {
+  background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2f80ed,
+    #56ccf2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2f80ed,
+    #56ccf2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.skew-up-12 {
+  z-index: 20;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-width: 12vh 100vw 0 0;
+  border-style: solid;
+  border-color: #edf2f7 transparent transparent transparent;
+}
+
+.skew-bottom-12 {
+  z-index: 20;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-width: 0 0 12vh 100vw;
+  border-style: solid;
+  border-color: transparent transparent #edf2f7 transparent;
+}
+
+.skew-bottom-12-r {
+  z-index: 20;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-width: 0 100vw 12vh 0;
+  border-style: solid;
+  border-color: transparent transparent #edf2f7 transparent;
+}
+
+@media (min-width: 768px) {
+  .w-md {
+    width: 57%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .w-lg {
+    width: 60%;
+  }
+}
+
+.h-72 {
+  height: 20rem;
+}
+
+.h-96 {
+  height: 25rem;
+}
+
+@media (min-width: 768px) {
+  .h-128 {
+    height: 30rem;
+  }
+}
+
+.scale-95 {
+  transform: scale(0.95);
+}
+
+.li-style {
+  @apply py-4 px-8 text-base font-bold;
+}
+
+.anim {
+  @apply transition duration-300 ease-linear transform;
+}
+
+.oculto {
+  opacity: 0;
+  max-height: 0;
+  overflow-y: hidden;
+  transition: all 0.4s ease;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway";
+}
+
+.cont {
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}

@@ -1,0 +1,38 @@
+.topic {
+  transition: all 0.4s ease;
+}
+
+.topic::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  background-image: url("http://drive.google.com/uc?export=view&id=1R14RsO_tCRaK6prwjMtJGti_szfdd-Rk");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.4s ease;
+}
+
+.topic-hidden {
+  opacity: 0;
+  max-height: 0;
+  overflow-y: hidden;
+  transition: all 0.4s ease;
+}
+
+.open .topic {
+  margin-bottom: 15px;
+}
+
+.open .topic::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.open .topic-hidden {
+  max-height: 1000px;
+  opacity: 1;
+}
